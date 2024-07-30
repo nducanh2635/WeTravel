@@ -8,17 +8,17 @@
 import UIKit
 
 class DetailPlaceViewController: UIViewController {
-
     
-    @IBOutlet weak var image: UIView!
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var detailPlace: UITextView!
     
+    var detailImg: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView.image = detailImg
+        
     }
     
 

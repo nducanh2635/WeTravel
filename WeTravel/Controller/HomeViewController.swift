@@ -73,6 +73,9 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailPlaceViewController") as! DetailPlaceViewController
+        
+        vc.detailImg = UIImage(named: image[indexPath.row])
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
