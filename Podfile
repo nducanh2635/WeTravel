@@ -6,6 +6,6 @@ target 'WeTravel' do
   use_frameworks!
 
   # Pods for WeTravel
-  
+  pod 'GoogleMaps'
 
 end
