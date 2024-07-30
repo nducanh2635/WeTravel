@@ -14,6 +14,8 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var searchMap: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

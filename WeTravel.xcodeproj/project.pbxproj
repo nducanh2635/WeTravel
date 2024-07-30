@@ -21,6 +21,11 @@
 		AFD73BA22C591D49009FA3F2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BA12C591D49009FA3F2 /* Profile.swift */; };
 		AFD73BA62C591DCC009FA3F2 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */; };
 		AFD73BA82C591EC9009FA3F2 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BA72C591EC9009FA3F2 /* ProfileTableViewCell.xib */; };
+		AFD73BAA2C59272C009FA3F2 /* CatagoryCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BA92C59272C009FA3F2 /* CatagoryCustom.xib */; };
+		AFD73BAC2C592ACB009FA3F2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BAB2C592ACB009FA3F2 /* Place.swift */; };
+		AFD73BAE2C592B87009FA3F2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */; };
+		AFD73BB02C592BA2009FA3F2 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */; };
+		AFD73BB22C594020009FA3F2 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		AFD73BA12C591D49009FA3F2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		AFD73BA72C591EC9009FA3F2 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		AFD73BA92C59272C009FA3F2 /* CatagoryCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatagoryCustom.xib; sourceTree = "<group>"; };
+		AFD73BAB2C592ACB009FA3F2 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
 		C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D142F0A04476117D922D96 /* Pods-WeTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.release.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD73BA12C591D49009FA3F2 /* Profile.swift */,
+				AFD73BAB2C592ACB009FA3F2 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +142,8 @@
 				AFD73B9D2C591C2E009FA3F2 /* MapViewController.swift */,
 				AFD73B9F2C591C47009FA3F2 /* LoginViewController.swift */,
 				AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */,
+				AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */,
+				AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				AFD73BA72C591EC9009FA3F2 /* ProfileTableViewCell.xib */,
+				AFD73BA92C59272C009FA3F2 /* CatagoryCustom.xib */,
+				AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -213,7 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD73B862C591396009FA3F2 /* Assets.xcassets in Resources */,
+				AFD73BB02C592BA2009FA3F2 /* HomeCollectionViewCell.xib in Resources */,
 				AFD73BA82C591EC9009FA3F2 /* ProfileTableViewCell.xib in Resources */,
+				AFD73BAA2C59272C009FA3F2 /* CatagoryCustom.xib in Resources */,
 				AFD73B842C591390009FA3F2 /* Base in Resources */,
 				AFD73B962C591AF4009FA3F2 /* Login.storyboard in Resources */,
 			);
@@ -273,10 +290,13 @@
 				AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */,
 				AFD73BA62C591DCC009FA3F2 /* ProfileTableViewCell.swift in Sources */,
 				AFD73B9E2C591C2E009FA3F2 /* MapViewController.swift in Sources */,
+				AFD73BB22C594020009FA3F2 /* DetailPlaceViewController.swift in Sources */,
 				AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */,
+				AFD73BAE2C592B87009FA3F2 /* HomeCollectionViewCell.swift in Sources */,
 				AFD73B9C2C591C22009FA3F2 /* ProfileViewController.swift in Sources */,
 				AFD73B982C591BF7009FA3F2 /* MainViewController .swift in Sources */,
 				AFD73B9A2C591C10009FA3F2 /* HomeViewController.swift in Sources */,
+				AFD73BAC2C592ACB009FA3F2 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

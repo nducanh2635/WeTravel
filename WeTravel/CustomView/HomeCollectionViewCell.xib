@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iZc-I6-Plw" customClass="HomeCollectionViewCell" customModule="WeTravel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TiM-14-uLI">
+                <rect key="frame" x="0.0" y="0.0" width="245" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DT5-P6-ijn">
+                        <rect key="frame" x="0.0" y="0.0" width="245" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="QDq-bX-Tak"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTx-1A-hxh">
+                        <rect key="frame" x="0.0" y="120" width="245" height="57"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DT5-P6-ijn" firstAttribute="leading" secondItem="TiM-14-uLI" secondAttribute="leading" id="19T-Mm-Mvk"/>
+                    <constraint firstItem="YTx-1A-hxh" firstAttribute="top" secondItem="DT5-P6-ijn" secondAttribute="bottom" id="A3n-AT-wO9"/>
+                    <constraint firstAttribute="trailing" secondItem="DT5-P6-ijn" secondAttribute="trailing" id="JTl-D0-9DD"/>
+                    <constraint firstItem="YTx-1A-hxh" firstAttribute="leading" secondItem="TiM-14-uLI" secondAttribute="leading" id="JjM-Xq-xOO"/>
+                    <constraint firstItem="DT5-P6-ijn" firstAttribute="top" secondItem="TiM-14-uLI" secondAttribute="top" id="ZuQ-dr-Lca"/>
+                    <constraint firstAttribute="trailing" secondItem="YTx-1A-hxh" secondAttribute="trailing" id="alz-bA-ZT4"/>
+                    <constraint firstAttribute="bottom" secondItem="YTx-1A-hxh" secondAttribute="bottom" id="yRY-wk-Ubq"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="245" height="177"/>
+            <connections>
+                <outlet property="avatarImageView" destination="DT5-P6-ijn" id="Usy-GG-of5"/>
+                <outlet property="nameLabel" destination="YTx-1A-hxh" id="nnM-gy-YR7"/>
+            </connections>
+            <point key="canvasLocation" x="194.6564885496183" y="99.647887323943664"/>
+        </collectionViewCell>
+    </objects>
+</document>
