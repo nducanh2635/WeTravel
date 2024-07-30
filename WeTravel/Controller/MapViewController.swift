@@ -11,17 +11,18 @@ import GooglePlaces
 
 class MapViewController: UIViewController, UISearchResultsUpdating {
     
-    @IBOutlet weak var mapView: MKMapView!
+    let mapView = MKMapView()
     
     let search = UISearchController(searchResultsController: ResultsViewController())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Map"
+        view.addSubview(mapView)
         search.searchBar.backgroundColor = .systemBackground
         search.searchResultsUpdater = self
         navigationItem.searchController = search
-        view.addSubview(mapView)
+        
         
     }
     override func viewDidLayoutSubviews() {

@@ -21,7 +21,11 @@ class DetailPlaceViewController: UIViewController {
         
     }
     
-
+    @IBAction func searchLocation(_ sender: Any) {
+        let vc = MapViewController()
+        present(vc, animated: true)
+    }
+    
     
 
 }
