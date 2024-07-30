@@ -10,9 +10,9 @@
 		0449E5B79EB8EE687C8ED44E /* Pods_WeTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */; };
 		AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */; };
 		AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */; };
-		AFD73B812C591390009FA3F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B802C591390009FA3F2 /* ViewController.swift */; };
 		AFD73B842C591390009FA3F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AFD73B832C591390009FA3F2 /* Base */; };
 		AFD73B862C591396009FA3F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD73B852C591396009FA3F2 /* Assets.xcassets */; };
+		AFD73B962C591AF4009FA3F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD73B952C591AF4009FA3F2 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		AFD73B792C591390009FA3F2 /* WeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AFD73B802C591390009FA3F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFD73B832C591390009FA3F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD73B852C591396009FA3F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD73B8A2C591396009FA3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD73B952C591AF4009FA3F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D142F0A04476117D922D96 /* Pods-WeTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.release.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD73B822C591390009FA3F2 /* Main.storyboard */,
+				AFD73B952C591AF4009FA3F2 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,7 +108,6 @@
 		AFD73B922C59142E009FA3F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AFD73B802C591390009FA3F2 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +190,7 @@
 			files = (
 				AFD73B862C591396009FA3F2 /* Assets.xcassets in Resources */,
 				AFD73B842C591390009FA3F2 /* Base in Resources */,
+				AFD73B962C591AF4009FA3F2 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD73B812C591390009FA3F2 /* ViewController.swift in Sources */,
 				AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */,
 				AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */,
 			);
