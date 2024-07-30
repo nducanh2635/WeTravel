@@ -32,11 +32,11 @@ final class GooglePlacesManager{
         completion: @escaping (Result<[Place], Error>) -> Void
     ){
         let filter = GMSAutocompleteFilter()
+        filter.types = ["locality"]
         
-        client.findAutocompletePredictions(fromQuery: query, filter: filter, sessionToken: nil){results,error in
+        client.findAutocompletePredictions(fromQuery: query, filter: filter, sessionToken: nil) { results, error in
             guard let results = results, error == nil else{
                 completion(.failure(PlacesError.failedToFind))
-                
                 return
             }
             

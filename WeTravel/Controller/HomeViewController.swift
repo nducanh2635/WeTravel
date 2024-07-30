@@ -14,17 +14,18 @@ class HomeViewController: UIViewController{
 //    var places: [Place] = Place.getDummyDatas()
     
     var image : [String] = 
-    [   "samson", "samson", "samson"
-        
+    [   "samson", "catba", "cotco",
+        "hagiang", "halong", "hoguom",
+        "phuyen", "tayninh", "trangan",
+        "vanmieu"
     ]
     
     var name : [String] =
-    [ "Sam Son", "Ha Noi", "HCM"
-    
+    [ "Sầm Sơn", "Cát Bà", "Cột cờ Hà Nội",
+      "Hà Giang", "Hạ Long", "Hồ Gươm",
+      "Phú Yên", "Tây Ninh", "Tràng An",
+      "Văn Miếu"
     ]
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
