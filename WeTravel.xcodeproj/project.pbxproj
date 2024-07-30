@@ -26,6 +26,8 @@
 		AFD73BAE2C592B87009FA3F2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */; };
 		AFD73BB02C592BA2009FA3F2 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */; };
 		AFD73BB22C594020009FA3F2 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */; };
+		AFD73BB42C595AB9009FA3F2 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BB32C595AB9009FA3F2 /* ResultsViewController.swift */; };
+		AFD73BB82C596AEE009FA3F2 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BB72C596AEE009FA3F2 /* GooglePlacesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
+		AFD73BB32C595AB9009FA3F2 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		AFD73BB72C596AEE009FA3F2 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D142F0A04476117D922D96 /* Pods-WeTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.release.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +148,8 @@
 				AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */,
 				AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */,
 				AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */,
+				AFD73BB32C595AB9009FA3F2 /* ResultsViewController.swift */,
+				AFD73BB72C596AEE009FA3F2 /* GooglePlacesManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 				AFD73BAE2C592B87009FA3F2 /* HomeCollectionViewCell.swift in Sources */,
 				AFD73B9C2C591C22009FA3F2 /* ProfileViewController.swift in Sources */,
 				AFD73B982C591BF7009FA3F2 /* MainViewController .swift in Sources */,
+				AFD73BB82C596AEE009FA3F2 /* GooglePlacesManager.swift in Sources */,
+				AFD73BB42C595AB9009FA3F2 /* ResultsViewController.swift in Sources */,
 				AFD73B9A2C591C10009FA3F2 /* HomeViewController.swift in Sources */,
 				AFD73BAC2C592ACB009FA3F2 /* Place.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ class HomeViewController: UIViewController{
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var places: [Place] = Place.getDummyDatas()
+//    var places: [Place] = Place.getDummyDatas()
     
     var image : [String] = 
     [   "samson", "samson", "samson"
@@ -35,7 +35,7 @@ class HomeViewController: UIViewController{
     
     func setCellContent(){
         
-        title = "Home"
+        title = "WeTravel"
         
         collectionView.delegate = self
         collectionView.dataSource = self

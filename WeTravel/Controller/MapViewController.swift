@@ -6,41 +6,50 @@
 //
 
 import UIKit
-import GoogleMaps
+import MapKit
+import GooglePlaces
 
-class MapViewController: UIViewController {
-
-    @IBOutlet weak var mapView: GMSMapView!
+class MapViewController: UIViewController, UISearchResultsUpdating {
     
-    @IBOutlet weak var searchMap: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
     
-    
+    let search = UISearchController(searchResultsController: ResultsViewController())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let options = GMSMapViewOptions()
-        options.camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        options.frame = self.view.bounds
-
-        let mapView = GMSMapView(options: options)
-        self.view.addSubview(mapView)
-
-        self.addMarker()
+        title = "Map"
+        search.searchBar.backgroundColor = .systemBackground
+        search.searchResultsUpdater = self
+        navigationItem.searchController = search
+        view.addSubview(mapView)
+        
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        mapView.frame = CGRect(x: 0, y: view.safeAreaInsets.top - 10,
+                               width: view.frame.size.width,
+                               height: view.frame.size.height - view.safeAreaInsets.top)
     }
     
-    func addMarker() {
-             let marker = GMSMarker()
-             marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-             marker.title = "Hanoi"
-             marker.snippet = "Vietnam"
-             marker.map = self.mapView
-    }
-    
-    override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let query = searchController.searchBar.text,
+              !query.trimmingCharacters(in: .whitespaces).isEmpty,
+        let resultVC = searchController.searchResultsController as? ResultsViewController else {
+            return
+            }
+        
+        GooglePlacesManager.shared.findPlaces(query: query){ result in
+            switch result {
+            case .success(let places):
+                DispatchQueue.main.async {
+                    resultVC.update(with: places)
+                }
+            case .failure(let error):
+                print(error)
+            }
+            
         }
+    }
     
 }
 

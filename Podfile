@@ -7,5 +7,6 @@ target 'WeTravel' do
 
   # Pods for WeTravel
   pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 end
