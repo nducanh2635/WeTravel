@@ -76,6 +76,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailPlaceViewController") as! DetailPlaceViewController
         
         vc.detailImg = UIImage(named: image[indexPath.row])
+        vc.detailPlc = name[indexPath.row]
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

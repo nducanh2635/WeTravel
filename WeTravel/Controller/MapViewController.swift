@@ -11,6 +11,8 @@ import GooglePlaces
 
 class MapViewController: UIViewController, UISearchResultsUpdating {
     
+    var location: String?
+    
     let mapView = MKMapView()
     
     let search = UISearchController(searchResultsController: ResultsViewController())
