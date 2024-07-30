@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0449E5B79EB8EE687C8ED44E /* Pods_WeTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */; };
 		AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */; };
 		AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */; };
 		AFD73B812C591390009FA3F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B802C591390009FA3F2 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E025DF0AA7E1C450C4A77B0 /* Pods-WeTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.debug.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.debug.xcconfig"; sourceTree = "<group>"; };
 		AFD73B792C591390009FA3F2 /* WeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		AFD73B832C591390009FA3F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFD73B852C591396009FA3F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD73B8A2C591396009FA3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D142F0A04476117D922D96 /* Pods-WeTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.release.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0449E5B79EB8EE687C8ED44E /* Pods_WeTravel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F9963690F4151377338457A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		817A752BB32E286004FD2B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E025DF0AA7E1C450C4A77B0 /* Pods-WeTravel.debug.xcconfig */,
+				F0D142F0A04476117D922D96 /* Pods-WeTravel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AFD73B702C591390009FA3F2 = {
 			isa = PBXGroup;
 			children = (
 				AFD73B7B2C591390009FA3F2 /* WeTravel */,
 				AFD73B7A2C591390009FA3F2 /* Products */,
+				817A752BB32E286004FD2B1C /* Pods */,
+				7F9963690F4151377338457A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFD73B8D2C591396009FA3F2 /* Build configuration list for PBXNativeTarget "WeTravel" */;
 			buildPhases = (
+				371AF00B2EABD8BD58C819E4 /* [CP] Check Pods Manifest.lock */,
 				AFD73B752C591390009FA3F2 /* Sources */,
 				AFD73B762C591390009FA3F2 /* Frameworks */,
 				AFD73B772C591390009FA3F2 /* Resources */,
@@ -168,6 +194,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		371AF00B2EABD8BD58C819E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeTravel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFD73B752C591390009FA3F2 /* Sources */ = {
@@ -315,6 +366,7 @@
 		};
 		AFD73B8E2C591396009FA3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E025DF0AA7E1C450C4A77B0 /* Pods-WeTravel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -343,6 +395,7 @@
 		};
 		AFD73B8F2C591396009FA3F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D142F0A04476117D922D96 /* Pods-WeTravel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
