@@ -15,14 +15,8 @@
 		AFD73B962C591AF4009FA3F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD73B952C591AF4009FA3F2 /* Login.storyboard */; };
 		AFD73B982C591BF7009FA3F2 /* MainViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B972C591BF7009FA3F2 /* MainViewController .swift */; };
 		AFD73B9A2C591C10009FA3F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B992C591C10009FA3F2 /* HomeViewController.swift */; };
-		AFD73B9C2C591C22009FA3F2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B9B2C591C22009FA3F2 /* ProfileViewController.swift */; };
 		AFD73B9E2C591C2E009FA3F2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B9D2C591C2E009FA3F2 /* MapViewController.swift */; };
 		AFD73BA02C591C47009FA3F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B9F2C591C47009FA3F2 /* LoginViewController.swift */; };
-		AFD73BA22C591D49009FA3F2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BA12C591D49009FA3F2 /* Profile.swift */; };
-		AFD73BA62C591DCC009FA3F2 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */; };
-		AFD73BA82C591EC9009FA3F2 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BA72C591EC9009FA3F2 /* ProfileTableViewCell.xib */; };
-		AFD73BAA2C59272C009FA3F2 /* CatagoryCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BA92C59272C009FA3F2 /* CatagoryCustom.xib */; };
-		AFD73BAC2C592ACB009FA3F2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BAB2C592ACB009FA3F2 /* Place.swift */; };
 		AFD73BAE2C592B87009FA3F2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */; };
 		AFD73BB02C592BA2009FA3F2 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */; };
 		AFD73BB22C594020009FA3F2 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */; };
@@ -41,14 +35,8 @@
 		AFD73B952C591AF4009FA3F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		AFD73B972C591BF7009FA3F2 /* MainViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController .swift"; sourceTree = "<group>"; };
 		AFD73B992C591C10009FA3F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		AFD73B9B2C591C22009FA3F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AFD73B9D2C591C2E009FA3F2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AFD73B9F2C591C47009FA3F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AFD73BA12C591D49009FA3F2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		AFD73BA72C591EC9009FA3F2 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
-		AFD73BA92C59272C009FA3F2 /* CatagoryCustom.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatagoryCustom.xib; sourceTree = "<group>"; };
-		AFD73BAB2C592ACB009FA3F2 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
@@ -122,8 +110,6 @@
 		AFD73B902C59141F009FA3F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AFD73BA12C591D49009FA3F2 /* Profile.swift */,
-				AFD73BAB2C592ACB009FA3F2 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,10 +128,8 @@
 			children = (
 				AFD73B972C591BF7009FA3F2 /* MainViewController .swift */,
 				AFD73B992C591C10009FA3F2 /* HomeViewController.swift */,
-				AFD73B9B2C591C22009FA3F2 /* ProfileViewController.swift */,
 				AFD73B9D2C591C2E009FA3F2 /* MapViewController.swift */,
 				AFD73B9F2C591C47009FA3F2 /* LoginViewController.swift */,
-				AFD73BA52C591DCC009FA3F2 /* ProfileTableViewCell.swift */,
 				AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */,
 				AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */,
 				AFD73BB32C595AB9009FA3F2 /* ResultsViewController.swift */,
@@ -157,8 +141,6 @@
 		AFD73B932C591435009FA3F2 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				AFD73BA72C591EC9009FA3F2 /* ProfileTableViewCell.xib */,
-				AFD73BA92C59272C009FA3F2 /* CatagoryCustom.xib */,
 				AFD73BAF2C592BA2009FA3F2 /* HomeCollectionViewCell.xib */,
 			);
 			path = CustomView;
@@ -235,8 +217,6 @@
 			files = (
 				AFD73B862C591396009FA3F2 /* Assets.xcassets in Resources */,
 				AFD73BB02C592BA2009FA3F2 /* HomeCollectionViewCell.xib in Resources */,
-				AFD73BA82C591EC9009FA3F2 /* ProfileTableViewCell.xib in Resources */,
-				AFD73BAA2C59272C009FA3F2 /* CatagoryCustom.xib in Resources */,
 				AFD73B842C591390009FA3F2 /* Base in Resources */,
 				AFD73B962C591AF4009FA3F2 /* Login.storyboard in Resources */,
 			);
@@ -292,19 +272,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD73BA02C591C47009FA3F2 /* LoginViewController.swift in Sources */,
-				AFD73BA22C591D49009FA3F2 /* Profile.swift in Sources */,
 				AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */,
-				AFD73BA62C591DCC009FA3F2 /* ProfileTableViewCell.swift in Sources */,
 				AFD73B9E2C591C2E009FA3F2 /* MapViewController.swift in Sources */,
 				AFD73BB22C594020009FA3F2 /* DetailPlaceViewController.swift in Sources */,
 				AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */,
 				AFD73BAE2C592B87009FA3F2 /* HomeCollectionViewCell.swift in Sources */,
-				AFD73B9C2C591C22009FA3F2 /* ProfileViewController.swift in Sources */,
 				AFD73B982C591BF7009FA3F2 /* MainViewController .swift in Sources */,
 				AFD73BB82C596AEE009FA3F2 /* GooglePlacesManager.swift in Sources */,
 				AFD73BB42C595AB9009FA3F2 /* ResultsViewController.swift in Sources */,
 				AFD73B9A2C591C10009FA3F2 /* HomeViewController.swift in Sources */,
-				AFD73BAC2C592ACB009FA3F2 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

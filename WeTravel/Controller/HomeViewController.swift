@@ -54,10 +54,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
-                
-//                let item = places[indexPath.row]
-//                cell.nameLabel.text = item.name
-//                cell.avatarImageView.image = UIImage(named: item.avatar)
+
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 23
         cell.layer.borderColor = UIColor.black.cgColor

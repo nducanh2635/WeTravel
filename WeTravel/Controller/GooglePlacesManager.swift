@@ -34,7 +34,7 @@ final class GooglePlacesManager{
         let filter = GMSAutocompleteFilter()
         filter.type = .geocode
         
-        client.findAutocompletePredictions(fromQuery: query, filter: filter, sessionToken: nil) { results, error in
+        client.findAutocompletePredictions(fromQuery: query, filter: nil, sessionToken: nil) { results, error in
             guard let results = results, error == nil else{
                 completion(.failure(PlacesError.failedToFind))
                 return
