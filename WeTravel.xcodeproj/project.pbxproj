@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0449E5B79EB8EE687C8ED44E /* Pods_WeTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */; };
+		AF6529252C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6529232C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld */; };
+		AF65292C2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65292A2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift */; };
+		AF65292D2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65292B2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift */; };
 		AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */; };
 		AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */; };
 		AFD73B842C591390009FA3F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AFD73B832C591390009FA3F2 /* Base */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		3E025DF0AA7E1C450C4A77B0 /* Pods-WeTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.debug.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.debug.xcconfig"; sourceTree = "<group>"; };
+		AF6529242C5C2BBC00C1350D /* HomeCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeCoreData.xcdatamodel; sourceTree = "<group>"; };
+		AF65292A2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AF65292B2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AFD73B792C591390009FA3F2 /* WeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 				AFD73B922C59142E009FA3F2 /* Controller */,
 				AFD73B852C591396009FA3F2 /* Assets.xcassets */,
 				AFD73B8A2C591396009FA3F2 /* Info.plist */,
+				AF6529232C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld */,
 			);
 			path = WeTravel;
 			sourceTree = "<group>";
@@ -110,6 +117,8 @@
 		AFD73B902C59141F009FA3F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF65292A2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift */,
+				AF65292B2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,14 +135,8 @@
 		AFD73B922C59142E009FA3F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AFD73B972C591BF7009FA3F2 /* MainViewController .swift */,
-				AFD73B992C591C10009FA3F2 /* HomeViewController.swift */,
-				AFD73B9D2C591C2E009FA3F2 /* MapViewController.swift */,
+				AFD73BDC2C5B459C009FA3F2 /* Tabbar */,
 				AFD73B9F2C591C47009FA3F2 /* LoginViewController.swift */,
-				AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */,
-				AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */,
-				AFD73BB32C595AB9009FA3F2 /* ResultsViewController.swift */,
-				AFD73BB72C596AEE009FA3F2 /* GooglePlacesManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +156,44 @@
 				AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		AFD73BDB2C5B4584009FA3F2 /* Search Location */ = {
+			isa = PBXGroup;
+			children = (
+				AFD73BB32C595AB9009FA3F2 /* ResultsViewController.swift */,
+				AFD73BB72C596AEE009FA3F2 /* GooglePlacesManager.swift */,
+			);
+			path = "Search Location";
+			sourceTree = "<group>";
+		};
+		AFD73BDC2C5B459C009FA3F2 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				AFD73BDF2C5B45D7009FA3F2 /* Map */,
+				AFD73BDD2C5B45B9009FA3F2 /* Home  */,
+				AFD73B972C591BF7009FA3F2 /* MainViewController .swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		AFD73BDD2C5B45B9009FA3F2 /* Home  */ = {
+			isa = PBXGroup;
+			children = (
+				AFD73BB12C594020009FA3F2 /* DetailPlaceViewController.swift */,
+				AFD73BAD2C592B87009FA3F2 /* HomeCollectionViewCell.swift */,
+				AFD73B992C591C10009FA3F2 /* HomeViewController.swift */,
+			);
+			path = "Home ";
+			sourceTree = "<group>";
+		};
+		AFD73BDF2C5B45D7009FA3F2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AFD73BDB2C5B4584009FA3F2 /* Search Location */,
+				AFD73B9D2C591C2E009FA3F2 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF65292C2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift in Sources */,
+				AF65292D2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift in Sources */,
 				AFD73BA02C591C47009FA3F2 /* LoginViewController.swift in Sources */,
 				AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */,
 				AFD73B9E2C591C2E009FA3F2 /* MapViewController.swift in Sources */,
@@ -280,6 +323,7 @@
 				AFD73B982C591BF7009FA3F2 /* MainViewController .swift in Sources */,
 				AFD73BB82C596AEE009FA3F2 /* GooglePlacesManager.swift in Sources */,
 				AFD73BB42C595AB9009FA3F2 /* ResultsViewController.swift in Sources */,
+				AF6529252C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld in Sources */,
 				AFD73B9A2C591C10009FA3F2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +543,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF6529232C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF6529242C5C2BBC00C1350D /* HomeCoreData.xcdatamodel */,
+			);
+			currentVersion = AF6529242C5C2BBC00C1350D /* HomeCoreData.xcdatamodel */;
+			name = HomeCoreData.xcdatamodeld;
+			path = "/Users/ghtk/Downloads/My project/WeTravel/WeTravel/HomeCoreData.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AFD73B712C591390009FA3F2 /* Project object */;
 }

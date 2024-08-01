@@ -16,6 +16,7 @@ class DetailPlaceViewController: UIViewController {
     var detailImg: UIImage?
     var detailPlc: String?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = detailImg

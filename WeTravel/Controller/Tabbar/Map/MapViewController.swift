@@ -12,9 +12,7 @@ import GooglePlaces
 class MapViewController: UIViewController, UISearchResultsUpdating {
     
     var location: String?
-    
     let mapView = MKMapView()
-    
     let search = UISearchController(searchResultsController: ResultsViewController())
     
     override func viewDidLoad() {
@@ -27,6 +25,7 @@ class MapViewController: UIViewController, UISearchResultsUpdating {
         
         
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         mapView.frame = CGRect(x: 0, y: view.safeAreaInsets.top - 10,

@@ -17,12 +17,12 @@ struct Place {
 final class GooglePlacesManager{
     
     static let shared = GooglePlacesManager()
-    
     private let client = GMSPlacesClient.shared()
     
     private init() {
         
     }
+    
     enum PlacesError : Error{
         case failedToFind
     }
@@ -47,4 +47,4 @@ final class GooglePlacesManager{
             completion(.success(places))
         }
     }
-    }
+}
