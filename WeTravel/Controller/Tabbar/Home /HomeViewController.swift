@@ -12,7 +12,7 @@ class HomeViewController: UIViewController, NSFetchedResultsControllerDelegate{
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var fetchedResultsController: NSFetchedResultsController<PlaceDetail>!
+    var fetchedResultsController: NSFetchedResultsController<Detail>!
     
     var image : [String] = 
     [   "samson", "catba", "cotco",
@@ -38,7 +38,7 @@ class HomeViewController: UIViewController, NSFetchedResultsControllerDelegate{
         
     }
     func setupData(){
-        save(name: "Sầm Sơn", detail: "Biển", image: "samson")
+//        save(name: "Sầm Sơn", detail: "", image: "samson")
         initializeFetchedResultsController()
     }
     
@@ -56,7 +56,7 @@ class HomeViewController: UIViewController, NSFetchedResultsControllerDelegate{
     
     func initializeFetchedResultsController() {
         
-        let fetchRequest: NSFetchRequest<PlaceDetail> = PlaceDetail.fetchRequest()
+        let fetchRequest: NSFetchRequest<Detail> = Detail.fetchRequest()
 
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
             
@@ -80,23 +80,23 @@ class HomeViewController: UIViewController, NSFetchedResultsControllerDelegate{
     
     func save(name: String, detail: String, image: String) {
             
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             
-            let managedContext = appDelegate.persistentContainer.viewContext
+        let managedContext = appDelegate.persistentContainer.viewContext
             
-            let entity = NSEntityDescription.entity(forEntityName: "PlaceDetail", in: managedContext)!
+        let entity = NSEntityDescription.entity(forEntityName: "Detail", in: managedContext)!
             
-            let place = NSManagedObject(entity: entity, insertInto: managedContext)
+        let placeDetail = NSManagedObject(entity: entity, insertInto: managedContext)
             
-            place.setValue(name, forKeyPath: "name")
-            place.setValue(detail, forKeyPath: "detail")
-            place.setValue(image, forKeyPath: "image")
+        placeDetail.setValue(name, forKeyPath: "name")
+        placeDetail.setValue(detail, forKeyPath: "detail")
+        placeDetail.setValue(image, forKeyPath: "image")
             
-            do {
-                try managedContext.save()
-            } catch let error as NSError {
-                print("Could not save. \(error), \(error.userInfo)")
-            }
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
             
     }
     
@@ -113,10 +113,10 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         cell.layer.cornerRadius = 23
         cell.layer.borderColor = UIColor.black.cgColor
         
-        let place = fetchedResultsController.object(at: indexPath)
+        let placeDetail = fetchedResultsController.object(at: indexPath)
         
-        cell.nameLabel.text = place.name
-        cell.avatarImageView.image = UIImage(named: place.image!)
+        cell.nameLabel.text = placeDetail.name
+        cell.avatarImageView.image = UIImage(named: placeDetail.image!)
         
 //        cell.nameLabel.text = name[indexPath.row]
 //        cell.avatarImageView.image = UIImage(named: image[indexPath.row])
@@ -132,10 +132,11 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailPlaceViewController") as! DetailPlaceViewController
-        let place = fetchedResultsController.object(at: indexPath)
+        let placeDetail = fetchedResultsController.object(at: indexPath)
         vc.detailImg = UIImage(named: image[indexPath.row])
-        vc.detailPlc = place.detail
+        vc.detailPlc = placeDetail.detail
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }

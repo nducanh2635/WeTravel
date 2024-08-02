@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0449E5B79EB8EE687C8ED44E /* Pods_WeTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B2465FB4B9AFC976D41FE1 /* Pods_WeTravel.framework */; };
 		AF6529252C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF6529232C5C2BBC00C1350D /* HomeCoreData.xcdatamodeld */; };
-		AF65292C2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65292A2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift */; };
-		AF65292D2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65292B2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift */; };
+		AF6529342C5C7E6500C1350D /* PlaceDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6529322C5C7E6500C1350D /* PlaceDetail+CoreDataClass.swift */; };
+		AF6529352C5C7E6500C1350D /* PlaceDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6529332C5C7E6500C1350D /* PlaceDetail+CoreDataProperties.swift */; };
+		AF6529382C5C7ED200C1350D /* Detail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6529362C5C7ED200C1350D /* Detail+CoreDataClass.swift */; };
+		AF6529392C5C7ED200C1350D /* Detail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6529372C5C7ED200C1350D /* Detail+CoreDataProperties.swift */; };
 		AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */; };
 		AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */; };
 		AFD73B842C591390009FA3F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AFD73B832C591390009FA3F2 /* Base */; };
@@ -30,8 +32,10 @@
 /* Begin PBXFileReference section */
 		3E025DF0AA7E1C450C4A77B0 /* Pods-WeTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTravel.debug.xcconfig"; path = "Target Support Files/Pods-WeTravel/Pods-WeTravel.debug.xcconfig"; sourceTree = "<group>"; };
 		AF6529242C5C2BBC00C1350D /* HomeCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeCoreData.xcdatamodel; sourceTree = "<group>"; };
-		AF65292A2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AF65292B2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AF6529322C5C7E6500C1350D /* PlaceDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AF6529332C5C7E6500C1350D /* PlaceDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaceDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AF6529362C5C7ED200C1350D /* Detail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Detail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AF6529372C5C7ED200C1350D /* Detail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Detail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		AFD73B792C591390009FA3F2 /* WeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD73B7C2C591390009FA3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD73B7E2C591390009FA3F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,8 +121,10 @@
 		AFD73B902C59141F009FA3F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AF65292A2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift */,
-				AF65292B2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift */,
+				AF6529362C5C7ED200C1350D /* Detail+CoreDataClass.swift */,
+				AF6529372C5C7ED200C1350D /* Detail+CoreDataProperties.swift */,
+				AF6529322C5C7E6500C1350D /* PlaceDetail+CoreDataClass.swift */,
+				AF6529332C5C7E6500C1350D /* PlaceDetail+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,10 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF65292C2C5C2EE900C1350D /* PlaceDetail+CoreDataClass.swift in Sources */,
-				AF65292D2C5C2EE900C1350D /* PlaceDetail+CoreDataProperties.swift in Sources */,
+				AF6529342C5C7E6500C1350D /* PlaceDetail+CoreDataClass.swift in Sources */,
+				AF6529352C5C7E6500C1350D /* PlaceDetail+CoreDataProperties.swift in Sources */,
 				AFD73BA02C591C47009FA3F2 /* LoginViewController.swift in Sources */,
 				AFD73B7D2C591390009FA3F2 /* AppDelegate.swift in Sources */,
+				AF6529382C5C7ED200C1350D /* Detail+CoreDataClass.swift in Sources */,
+				AF6529392C5C7ED200C1350D /* Detail+CoreDataProperties.swift in Sources */,
 				AFD73B9E2C591C2E009FA3F2 /* MapViewController.swift in Sources */,
 				AFD73BB22C594020009FA3F2 /* DetailPlaceViewController.swift in Sources */,
 				AFD73B7F2C591390009FA3F2 /* SceneDelegate.swift in Sources */,

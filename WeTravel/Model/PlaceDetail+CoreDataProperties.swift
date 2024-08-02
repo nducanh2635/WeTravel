@@ -17,8 +17,8 @@ extension PlaceDetail {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var detail: String?
     @NSManaged public var image: String?
+    @NSManaged public var detail: String?
 
 }
 
