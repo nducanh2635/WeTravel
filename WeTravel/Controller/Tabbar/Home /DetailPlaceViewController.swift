@@ -20,7 +20,7 @@ class DetailPlaceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = detailImg
-//        detailPlace.text = detailPlc
+        detailPlace.text = detailPlc
         
     }
     

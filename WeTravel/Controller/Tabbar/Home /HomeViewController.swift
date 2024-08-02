@@ -38,7 +38,9 @@ class HomeViewController: UIViewController, NSFetchedResultsControllerDelegate{
         
     }
     func setupData(){
-//        save(name: "Sầm Sơn", detail: "", image: "samson")
+        //goi ham save nhung build 1 lan roi xoa
+//        save(name: <#T##String#>, detail: <#T##String#>, image: <#T##String#>)
+        
         initializeFetchedResultsController()
     }
     
