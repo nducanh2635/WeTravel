@@ -22,7 +22,7 @@ class MapViewController: UIViewController, UISearchResultsUpdating {
         search.searchBar.backgroundColor = .systemBackground
         search.searchResultsUpdater = self
         navigationItem.searchController = search
-        
+        search.searchBar.text = location
         
     }
     

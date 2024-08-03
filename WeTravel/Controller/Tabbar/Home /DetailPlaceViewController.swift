@@ -15,6 +15,7 @@ class DetailPlaceViewController: UIViewController {
     
     var detailImg: UIImage?
     var detailPlc: String?
+    var namePlc: String?
     
     
     override func viewDidLoad() {
@@ -27,7 +28,7 @@ class DetailPlaceViewController: UIViewController {
     @IBAction func searchLocation(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
         
-        vc.location = detailPlc
+        vc.location = namePlc
         
         navigationController?.pushViewController(vc, animated: true)
         

@@ -120,6 +120,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         cell.nameLabel.text = placeDetail.name
         cell.avatarImageView.image = UIImage(named: placeDetail.image!)
         
+        
 //        cell.nameLabel.text = name[indexPath.row]
 //        cell.avatarImageView.image = UIImage(named: image[indexPath.row])
         
@@ -137,6 +138,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         let placeDetail = fetchedResultsController.object(at: indexPath)
         vc.detailImg = UIImage(named: image[indexPath.row])
         vc.detailPlc = placeDetail.detail
+        vc.namePlc = placeDetail.name
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
